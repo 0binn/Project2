@@ -39,12 +39,16 @@ void filestat2(){
 
 //파일 1의 시간 정보를 가져오는 함수 작성
 void filetime1(){
-    
+    	static struct tm t1;
+	t1 = *(localtime(&stat.st_mtime));
+	time1 = &t1;
 }
 
 //파일 2의 시간 정보를 가져오는 함수 작성
 void filetime2(){
-    
+    	static struct tm t2;
+	t2 = *(localtime(&stat.st_mtime));
+	time2 = &t2;
 }
 
 //두 개의 파일 크기를 비교하는 함수 작성
