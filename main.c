@@ -1,4 +1,4 @@
-﻿#include <stdio.h>
+#include <stdio.h>
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <unistd.h>
@@ -29,11 +29,18 @@ int main(){
 
 //파일 1의 정보를 가져오는 함수 작성
 void filestat1(){
-    
+    	const char* f = "./text1";
+	if(stat(f, &stat1)) {
+		printf("Text1 Does Not Exist\n");	
+	}
 }
 
 //파일 2의 정보를 가져오는 함수 작성
 void filestat2(){
+	const char* f = "./text2";
+	if(stat(f, &stat2)) {
+		printf("Text2 Does Not Exist\n");	
+	}
     
 }
 
