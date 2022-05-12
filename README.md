@@ -8,4 +8,4 @@ Assignment2
   
 2019202083 권보경(doomdabo)  
 2019202078 현예림(hnym1104)  
-2019202095 나원호(Cooolryan  
+2019202095 나원호(Cooolryan)
