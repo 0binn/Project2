@@ -117,4 +117,3 @@ void timecmp(){
 		else if(time1->tm_min==time2->tm_min) printf("same date\n");
 	}
 }
-}
