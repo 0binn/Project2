@@ -29,12 +29,18 @@ int main(){
 
 //파일 1의 정보를 가져오는 함수 작성
 void filestat1(){
-    
+    	const char* f = "./text1";
+	if(stat(f, &stat1)) {
+		printf("Text1 Does Not Exist\n");	
+	}
 }
 
 //파일 2의 정보를 가져오는 함수 작성
 void filestat2(){
-    
+	const char* f = "./text2";
+	if(stat(f, &stat2)) {
+		printf("Text2 Does Not Exist\n");	
+	}
 }
 
 //파일 1의 시간 정보를 가져오는 함수 작성
@@ -53,12 +59,13 @@ void filetime2(){
 
 //두 개의 파일 크기를 비교하는 함수 작성
 void sizecmp(){
+
     
 }
 
 //두 개의 파일 블락 수를 비교하는 함수 작성
 void blockcmp(){
-    
+
 }
 
 //두 개의 파일 수정 날짜를 비교하는 함수 작성
