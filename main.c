@@ -85,7 +85,7 @@ void blockcmp(){
       int block1=stat1.st_blksize;
       int block2=stat2.st_blksize;
 
-      printf("block compare\n\n");
+      printf("block compare\n");
       if(block1>block2)
             printf("text1 is bigger\n\n");
       else if (block1<block2)
@@ -97,12 +97,12 @@ void blockcmp(){
 //두 개의 파일 수정 날짜를 비교하는 함수 작성
 void datecmp(){
 	printf("date compare\n");
-	if(time1->tm_mon>time2->tm_mon) printf("text1 is early\n");
-	else if(time1->tm_mon<time2->tm_mon) printf("text2 is early\n");
+	if(time1->tm_mon>time2->tm_mon) printf("text1 is early\n\n");
+	else if(time1->tm_mon<time2->tm_mon) printf("text2 is early\n\n");
 	else if(time1->tm_mon==time2->tm_mon) {
-		if(time1->tm_mday<time2->tm_mday) printf("text1 is early\n");
-		else if(time1->tm_mday>time2->tm_mday) printf("text2 is early\n");
-		else if(time1->tm_mday==time2->tm_mday) printf("same date\n");
+		if(time1->tm_mday<time2->tm_mday) printf("text1 is early\n\n");
+		else if(time1->tm_mday>time2->tm_mday) printf("text2 is early\n\n");
+		else if(time1->tm_mday==time2->tm_mday) printf("same date\n\n");
 	}
 }
 
